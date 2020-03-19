@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.j2ee.ejbjarproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/j2ee-ejbjarproject/3">
+            <name>serveurAnalyse</name>
+            <minimum-ant-version>1.6.5</minimum-ant-version>
+            <included-library dirs="200">file.reference.bson-3.12.1.jar</included-library>
+            <included-library dirs="200">file.reference.jackson-annotations-2.8.11.jar</included-library>
+            <included-library dirs="200">file.reference.jackson-core-2.8.6.jar</included-library>
+            <included-library dirs="200">file.reference.jackson-databind-2.8.11.3.jar</included-library>
+            <included-library dirs="200">file.reference.mongodb-driver-core-3.12.1.jar</included-library>
+            <included-library dirs="200">file.reference.mongodb-driver-sync-3.12.1.jar</included-library>
+            <source-roots>
+                <root id="src.dir" name="Source Packages"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir" name="Test Packages"/>
+            </test-roots>
+        </data>
+    </configuration>
+</project>

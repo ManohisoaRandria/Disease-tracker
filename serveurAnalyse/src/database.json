@@ -1,0 +1,45 @@
+ {"_id":"analyse3","dateAnalyses":"1999-01-01","taux":[{"composant":"c1","valeur":15},{"composant":"c2","valeur":12},{"composant":"c3","valeur":86},{"composant":"Tahina","valeur":10}],"color":"rgba(15,200,56,0.2)"}
+db.createCollection('patient')
+db.patient.insertOne({ "_id" : "P5",
+     "nom" : "Rakoto",
+     "prenom" : "jean",
+    "naissance" : "1999-01-01",
+     "sexe" :"M" ,
+     "analyses":[
+       {"_id":"analyse1","dateAnalyses":"1999-01-01","taux":[{"composant":"c1","valeur":39},{"composant":"c2","valeur":40},{"composant":"c3","valeur":26},{"composant":"Tahina","valeur":10}],"color":"rgba(2,100,30,0.2)"},
+       {"_id":"analyse2","dateAnalyses":"1999-01-01","taux":[{"composant":"c1","valeur":15},{"composant":"c2","valeur":12},{"composant":"c3","valeur":86},{"composant":"Tahina","valeur":10}],"color":"rgba(26,59,79,0.2)"}
+     ]
+   })
+   db.patient.insertOne({ "_id" : "P6",
+        "nom" : "Rakoto",
+        "prenom" : "haha",
+       "naissance" : "1999-01-01",
+        "sexe" :"M" ,
+        "analyses":[
+          {
+            "_id":"analyse11",
+            "dateAnalyses":"1999-01-01",
+            "taux":[{"composant":"c1","valeur":12},{"composant":"c2","valeur":15},{"composant":"c3","valeur":12},{"composant":"Tahina","valeur":10}],
+            "color":"rgba(0,200,0,0.2)"
+          },
+          {
+            "_id":"analyse2",
+            "dateAnalyses":"1999-01-01",
+            "taux":[{"composant":"c1","valeur":12},{"composant":"c2","valeur":15},{"composant":"c3","valeur":12},{"composant":"Tahina","valeur":10}],
+            "color":"rgba(0,200,0,0.2)"
+          }
+        ]
+      })
+
+  db.maladie.insertOne({
+    "_id":"mal2",
+    "nom":"marary saina",
+    "caracteristique":[{"composant":"c1","min":2.0,"max":2.2},{"composant":"c2","min":1.0,"max":1.1},{"composant":"c3","min":1.0,"max":1.1},{"composant":"Tahina","min":1,"max":1}]
+    });
+
+
+      db.maladie.insertOne({
+        "_id":"mal4",
+        "nom":"salama",
+        "caracteristique":[{"composant":"c1","min":1.0,"max":1.1},{"composant":"c2","min":1.0,"max":1.1},{"composant":"c3","min":1.0,"max":1.1},{"composant":"Tahina","min":1,"max":1}]
+        });
